@@ -13,7 +13,7 @@ main()
   printf("Enter the two numbers: ");
   scanf("%i %i",&a,&b);
   getchar();
-  printf("Enter the operator: ");
+  printf("Enter the operator(+,-,*,/): ");
   scanf("%c",&op);
   if(op == '+')
   {
