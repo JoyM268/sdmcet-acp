@@ -21,11 +21,11 @@ main()
   }
   else if(op == '-')
   {
-    printf("%i + %i = %i\n",a,b,sub(a,b));
+    printf("%i - %i = %i\n",a,b,sub(a,b));
   }
   else if(op == '*')
   {
-    printf("%i + %i = %i\n",a,b,product(a,b));
+    printf("%i x %i = %i\n",a,b,product(a,b));
   }
   else if(op == '/')
   {
@@ -36,7 +36,7 @@ main()
     }
     else
     {
-      printf("%i + %i = %.2f\n",a,b,quotient(a,b));
+      printf("%i / %i = %.2f\n",a,b,quotient(a,b));
     }
   }
   else
