@@ -12,9 +12,9 @@
 		<li><a href="#contact">Contact</a></li>
 	</ul>
 	<h2 id="installation">Installation</h2>
-	<p>To use the programs in this repository, you must have a C compiler installed on your machine. You can install a C compiler such as <a href="https://gcc.gnu.org/">GCC</a> or  <a href="https://clang.llvm.org/">Clang</a> on your system by following the instructions provided by your operating system or distribution.</p>
+	<p>To execute or run the programs in this repository, you must have a C compiler installed on your machine. You can install a C compiler such as <a href="https://gcc.gnu.org/">GCC</a> or  <a href="https://clang.llvm.org/">Clang</a> on your system by following the instructions provided by your operating system or distribution.</p>
 	<h2 id="usage">Usage</h2>
-	<p>To use the programs in this repository, simply clone the repository to your local machine using the following command:</p>
+	<p>To run the programs in this repository, simply clone the repository to your local machine using the following command:</p>
 	<pre><code>git clone https://github.com/JoyM268/Advanced-C-Programming.git</code></pre>
   <p> Alternatively, you can download all the code in this repository as a zip file by clicking the link: 
     <a href="https://github.com/JoyM268/Advanced-C-Programming/archive/refs/heads/main.zip">Download Zip File</a>
