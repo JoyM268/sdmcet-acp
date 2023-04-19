@@ -5,7 +5,7 @@
 int add(int, int);
 int sub(int, int);
 int product(int, int);
-int quotient(int, int);
+float quotient(int, int);
 main()
 {
   int a, b, result;
@@ -17,35 +17,32 @@ main()
   scanf("%c",&op);
   if(op == '+')
   {
-    result = add(a,b);
+    printf("%i + %i = %i\n",a,b,add(a,b));
   }
   else if(op == '-')
   {
-    result = sub(a,b);
+    printf("%i + %i = %i\n",a,b,sub(a,b));
   }
   else if(op == '*')
   {
-    result = product(a,b);
+    printf("%i + %i = %i\n",a,b,product(a,b));
   }
   else if(op == '/')
   {
     if(b == 0)
     {
       printf("Dividing by 0 error\n");
-      return 0;
+      
     }
     else
     {
-      printf("%i %c %i = %.2f\n",a,op,b,(float)a/b);
-      return 0;
+      printf("%i + %i = %.2f\n",a,b,quotient(a,b));
     }
   }
   else
   {
     printf("Invalid Operator\n");
-    return 0;
   }
-  printf("%i %c %i = %i\n",a,op,b,result);
 }
 int add(int a, int b)
 {
@@ -60,7 +57,7 @@ int product(int a, int b)
 {
   return a * b;
 }
-int quotient(int a, int b)
+float quotient(int a, int b)
 {
-  return a / b;
+  return (float)a / b;
 }
