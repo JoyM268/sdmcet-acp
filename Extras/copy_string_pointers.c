@@ -7,7 +7,6 @@ main()
   char org_str[SIZE], cpy_str[SIZE];
   char *org_ptr = org_str;
   char *cpy_ptr = cpy_str;
-  int i, j;
   printf("Enter the input string: ");
   scanf("%[^\n]",org_ptr);
   while(*org_ptr != '\0')
