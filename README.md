@@ -3,7 +3,8 @@
 <body>
 	<h1>Advanced C Programming</h1>
 	<p>Welcome to the "Advanced C Programming" Github repository! This repository is a comprehensive collection of all the programs taught in the ACP class of SDM College of Engineering and Technology, 2022 - 23. The programs cover advanced topics in C programming such as pointers, structure, union, dynamic memory allocation, file I/O, and storage classes.</p>
-	<p>This repository is contributed by the owner and does not have any license. The programs are intended for educational purposes.</p>
+<p>New programs will be added to this repository as the teacher completes each topic.</p>
+	<p>This repository does not have any license. The programs are intended for educational purposes.</p>
 	<h2>Table of Contents</h2>
 	<ul>
 		<li><a href="#installation">Installation</a></li>
