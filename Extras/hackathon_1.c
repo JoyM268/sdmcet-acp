@@ -85,18 +85,18 @@ void display(customer *ptr)
 }
 void lowest(customer *ptr)
 {
-  float acc = ptr -> balance;
+  float amt = ptr -> balance;
   int i;
   for(i = 1; i < 5; i++)
   {
-    if(acc > (ptr + i) -> balance)
+    if(amt > (ptr + i) -> balance)
     {
-      acc = (ptr + i) -> balance;
+      amt = (ptr + i) -> balance;
     }
   }
   for(i = 1; i < 5; i++)
   {
-    if(acc == (ptr + i) -> balance)
+    if(amt == (ptr + i) -> balance)
     {
       printf("\nLowest Balance\n");
       printf("Name: %s\n", (ptr + i) -> name);
@@ -109,18 +109,18 @@ void lowest(customer *ptr)
 }
 void highest(customer *ptr)
 {
-  float acc = ptr -> balance;
+  float amt = ptr -> balance;
   int i;
   for(i = 1; i < 5; i++)
   {
-    if(acc < ((ptr + i) -> balance))
+    if(amt < ((ptr + i) -> balance))
     {
-      acc = (ptr + i) -> balance;
+      amt = (ptr + i) -> balance;
     }
   }
   for(i = 1; i < 5; i++)
   {
-    if(acc == (ptr + i) -> balance)
+    if(amt == (ptr + i) -> balance)
     {
       printf("\nHighest Balance\n");
       printf("Name: %s\n", (ptr + i) -> name);
