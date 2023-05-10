@@ -39,12 +39,13 @@ int check_pair(int val1, int val2)
 
 int is_balanced(char arr[], int n)
 {
-  int i;
+  int i,open_count = 0, close_count = 0;
   for(i = 0; i < n; i++)
   {
     if(arr[i] == '(' || arr[i] == '{' || arr[i] == '[')
     {
       push(arr[i]);
+      open_count++;
     }
     else
     {
@@ -57,11 +58,16 @@ int is_balanced(char arr[], int n)
         if(check_pair(s.stk[s.top],arr[i]))
         {
           pop();
+          close_count++;
           continue;
         }
         return 0;
       }
     }
+  }
+  if(open_count != close_count)
+  {
+    return 0;
   }
   return 1;
 }
