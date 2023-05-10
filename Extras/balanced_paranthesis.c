@@ -4,7 +4,7 @@
 #define MAX 50
 
 struct stack{
-  int top;se
+  int top;
   char stk[MAX];
 } s;
 
