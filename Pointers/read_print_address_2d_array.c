@@ -23,7 +23,7 @@ void print_address_value(int (*ptr)[COL], int m, int n)
     {
         for(j = 0; j < n; j++)
         {
-            printf("%d\t%d\n",*(*(ptr + i) + j), (*(ptr + i) + j));
+            printf("%d\t%p\n",*(*(ptr + i) + j), (*(ptr + i) + j));
         }
     }
 }
