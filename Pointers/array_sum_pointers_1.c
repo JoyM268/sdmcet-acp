@@ -16,12 +16,12 @@ main()
   printf("Index\tValues\tAddress\n");
   while(i < n)
   {
-    printf("arr[%d]\t%d\t%u\n",i,*ptr,ptr);
+    printf("arr[%d]\t%d\t%p\n",i,*ptr,ptr);
     sum += *ptr;
     ptr++;
     i++;
   }
   printf("Sum = %d\n",sum);
-  printf("&arr[0] = %u\n",arr);
-  printf("ptr = %u\n",ptr);
+  printf("&arr[0] = %p\n",arr);
+  printf("ptr = %p\n",ptr);
 }
