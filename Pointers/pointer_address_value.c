@@ -7,9 +7,9 @@ main()
   x = 10;
   y = *ptr;
   printf("Value of x is %d\n",x);
-  printf("%d is stored at address = %u\n",*&x,&x);
-  printf("%d is stored at address = %u\n",*ptr,ptr);
-  printf("%u is stored at address = %u\n",ptr,&ptr);
+  printf("%d is stored at address = %p\n",*&x,&x);
+  printf("%d is stored at address = %p\n",*ptr,ptr);
+  printf("%u is stored at address = %p\n",ptr,&ptr);
   *ptr = 25;
   printf("x = %d\n",x);
 }
