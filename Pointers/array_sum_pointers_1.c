@@ -13,6 +13,7 @@ main()
     scanf("%d",&arr[i]);
   }
   i = 0;
+  printf("Index\tValues\tAddress\n");
   while(i < n)
   {
     printf("arr[%d]\t%d\t%u\n",i,*ptr,ptr);
