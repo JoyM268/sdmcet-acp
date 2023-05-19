@@ -2,7 +2,7 @@
 <html>
 <body>
 	<h1>Advanced C Programming</h1>
-	<p>Welcome to the "Advanced C Programming" Github repository! This repository is a comprehensive collection of all the programs taught in the ACP class of SDM College of Engineering and Technology, 2022 - 23. The programs cover advanced topics in C programming such as pointers, structure, union, dynamic memory allocation, file I/O, and storage classes.</p>
+	<p>Welcome to the "ACP Programs" Github repository! This repository is a comprehensive collection of all the programs taught in the ACP class of SDM College of Engineering and Technology, 2022 - 23. The programs cover advanced topics in C programming such as pointers, structure, union, dynamic memory allocation, file I/O, and storage classes.</p>
 <p>New programs will be added to this repository as the teacher completes each topic.</p>
 	<p>This repository does not have any license. The programs are intended for educational purposes.</p>
 	<h2>Table of Contents</h2>
@@ -16,7 +16,7 @@
 	<p>To execute or run the programs in this repository, you must have a C compiler installed on your machine. You can install a C compiler such as <a href="https://gcc.gnu.org/">GCC</a> or  <a href="https://clang.llvm.org/">Clang</a> on your system by following the instructions provided by your operating system or distribution.</p>
 	<h2 id="usage">Usage</h2>
 	<p>To run the programs in this repository, simply clone the repository to your local machine using the following command:</p>
-	<pre><code>git clone https://github.com/JoyM268/Advanced-C-Programming.git</code></pre>
+	<pre><code>git clone https://github.com/JoyM268/ACP-Programs.git</code></pre>
   <p> Alternatively, you can download all the code in this repository as a zip file by clicking the link: 
     <a href="https://github.com/JoyM268/Advanced-C-Programming/archive/refs/heads/main.zip">Download Zip File</a>
   </p>
