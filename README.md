@@ -18,7 +18,7 @@
 	<p>To run the programs in this repository, simply clone the repository to your local machine using the following command:</p>
 	<pre><code>git clone https://github.com/JoyM268/ACP-Programs.git</code></pre>
   <p> Alternatively, you can download all the code in this repository as a zip file by clicking the link: 
-    <a href="https://github.com/JoyM268/Advanced-C-Programming/archive/refs/heads/main.zip">Download Zip File</a>
+    <a href="https://github.com/JoyM268/ACP-Programs/archive/refs/heads/main.zip">Download Zip File</a>
   </p>
   <br>
 	<p>After cloning the repository, you can navigate to the directory containing the program you wish to compile and run the following command:</p>
