@@ -9,16 +9,16 @@ void insert(int *, int *, int, int);
 
 main()
 {
-    int arr[SIZE], n, index, ele;
+    int arr[SIZE], n, pos, ele;
     printf("Enter the number of elements: ");
     scanf("%d", &n);
     printf("Enter %d elements: ", n);
     read_array(arr, n);
     printf("Enter the element to be inserted: ");
     scanf("%d",&ele);
-    printf("Enter the index: ");
-    scanf("%d",&index);
-    if(index > n || index < 0)
+    printf("Enter the pos: ");
+    scanf("%d",&pos);
+    if(pos > n || pos < 1)
     {
         printf("Insertion not possible\n");
         exit(0);
@@ -27,7 +27,7 @@ main()
     print_array(arr, n);
     printf("\n");
     printf("Array after insertion: ");
-    insert(arr, &n, index, ele);
+    insert(arr, &n, pos, ele);
     print_array(arr, n);
 }
 
@@ -49,13 +49,13 @@ void print_array(int *arr, int n)
     }
 }
 
-void insert(int *arr, int *n, int index, int ele)
+void insert(int *arr, int *n, int pos, int ele)
 {
     int i;
-    for(i = *n - 1; i >= index; i--)
+    for(i = *n - 1; i >= pos - 1; i--)
     {
         arr[i + 1] = arr[i];
     }
-    arr[index] = ele;
+    arr[pos - 1] = ele;
     (*n)++;
 }
