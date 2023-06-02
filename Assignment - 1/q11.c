@@ -20,8 +20,11 @@ main()
   }
   printf("Enter %d elements:\n", m*n);
   read_matrix(matrix, m);
-  printf("The sum of primary diagonal elements: %d\n", primary(matrix, m));
-  printf("The sum of secondary diagonal elements: %d\n",secondary(matrix, m));
+  int primary = primary(matrix, m);
+  int secondary = secondary(matrix, m);
+  printf("The sum of primary diagonal elements: %d\n", primary);
+  printf("The sum of secondary diagonal elements: %d\n", secondary);
+  printf("The sum of primary and secondary diagonal elements: %d\n", primary + secondary);
 }
 
 void read_matrix(int (*matrix)[COL], int m)
