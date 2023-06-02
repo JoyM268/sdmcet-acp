@@ -1,4 +1,4 @@
-//Program to add principal diagonal elements of the array(primary and secondary diagonal 
+//Program to add principal diagonal elements of the array(primary and secondary diagonal)
  #include<stdio.h> 
  #include<stdlib.h> 
  #define ROW 15 
