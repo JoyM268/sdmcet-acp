@@ -34,7 +34,7 @@
    { 
      for(j = 0; j < m; j++) 
      { 
-       scanf("%d", &matrix[i][j]); 
+       scanf("%d", (*(matrix + i) + j)); 
      } 
    } 
  } 
@@ -43,7 +43,7 @@
    int sum = 0, i; 
    for(i = 0; i < m; i++) 
    { 
-     sum += matrix[i][i]; 
+     sum += *(*(matrix + i) + i); 
    } 
    return sum; 
  } 
@@ -53,7 +53,7 @@
    int sum = 0, i; 
    for(i = 0; i < m; i++) 
    { 
-     sum += matrix[i][m - i - 1]; 
+     sum += *(*(matrix + i) + (m - i - 1)); 
    } 
    return sum; 
  }
