@@ -6,7 +6,7 @@
 
 void read_names(char [][COL], int);
 void print_names(char [][COL], int);
-void swap_strings(char [], char []);
+void swap_strings(char *, char *);
 void bubble_sort(char [][COL], int);
 main()
 {
@@ -20,7 +20,7 @@ main()
     print_names(names, n);
 }
 
-void swap_strings(char a[], char b[])
+void swap_strings(char *a, char *b)
 {
     char temp[COL];
     strcpy(temp, a);
