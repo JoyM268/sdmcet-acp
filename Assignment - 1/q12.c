@@ -4,7 +4,7 @@
 #define COL 15
 
 void read_matrix(int (*)[COL], int, int);
-void transpose_matrix(int (*)[COL], int (*)[COL]);
+void transpose_matrix(int (*)[COL], int (*)[COL], int , int);
 void print_matrix(int (*)[COL], int, int);
 main()
 {
