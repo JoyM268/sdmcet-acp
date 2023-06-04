@@ -2,7 +2,7 @@
 #include<stdio.h>
 #define SIZE 50
 
-int count_case(char *, int *, int *);
+void count_case(char *, int *, int *);
 main()
 {
     char str[SIZE];
@@ -14,7 +14,7 @@ main()
     printf("Number of uppercase letters: %d\n", count_upr);
 }
 
-int count_case(char *str, int *count_lwr, int *count_upr)
+void count_case(char *str, int *count_lwr, int *count_upr)
 {
     *count_upr = 0;
     *count_lwr = 0;
