@@ -13,7 +13,7 @@ main()
     scanf("%d %d", &m, &n);
     printf("Enter %d elements:\n", m*n);
     read_matrix(matrix, m, n);
-    transpose_matrix(matrix, transpose, &m, &n);
+    transpose_matrix(matrix, transpose, m, n);
     printf("The transpose of the matrix is:\n");
     print_matrix(transpose, n, m);
 }
