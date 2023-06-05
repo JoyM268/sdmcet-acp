@@ -16,7 +16,7 @@ main()
     read_array(arr, n);
     printf("Enter the element to be inserted: ");
     scanf("%d",&ele);
-    printf("Enter the pos: ");
+    printf("Enter the position: ");
     scanf("%d",&pos);
     if(pos > n || pos < 1)
     {
