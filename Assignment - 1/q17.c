@@ -13,10 +13,10 @@ main()
     scanf("%d", &n);
     printf("Enter %d elements: ", n);
     read_array(arr, n);
-    printf("Before swapping: ");
+    printf("Before reverse: ");
     print_array(arr, n);
     printf("\n");
-    printf("After swapping: ");
+    printf("After reverse: ");
     reverse(arr, n);
     print_array(arr, n);
 }
