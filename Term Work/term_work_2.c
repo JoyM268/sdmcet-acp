@@ -28,7 +28,6 @@ void delete_character(char *str, char ch)
         *temp = *(temp + 1);
         temp++;
       }
-      *temp = '\0';
       continue;
     }
     str++;
