@@ -17,18 +17,18 @@ main()
 
 void delete_character(char *str, char ch) 
 {
-  char *end;
+  char *temp;
   while(*str)
   {
     if(*str == ch)
     {
-      end = str;
-      while(*end)
+      temp = str;
+      while(*temp)
       {
-        *end = *(end + 1);
-        end++;
+        *temp = *(temp + 1);
+        temp++;
       }
-      *end = '\0';
+      *temp = '\0';
       continue;
     }
     str++;
