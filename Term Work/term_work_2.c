@@ -34,3 +34,22 @@ void delete_character(char *str, char ch)
     str++;
   }
 }
+
+//OR (alternate Method)
+
+/*
+ void delete_character(char *str, char ch)
+{
+  char *dest = str;
+  while (*str)
+  {
+    if (*str != ch)
+    {
+      *dest = *str; 
+      dest++;      
+    }
+    str++; 
+  }
+  *dest = '\0';
+}
+*/
