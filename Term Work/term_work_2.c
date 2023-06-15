@@ -1,4 +1,5 @@
-//Program to delete all the occurrence of a given character in a string
+/* Using pointer write a function that receives a character string and a character as argument and delete all occurrences of this character in the string. The function should return the corrected string with no holes. */
+
 #include <stdio.h>
 #define SIZE 50 
 
