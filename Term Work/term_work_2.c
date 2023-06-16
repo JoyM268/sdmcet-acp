@@ -31,7 +31,7 @@
    *dest = '\0'; 
  } 
  
- //OR (alternate Method) 
+ //OR (alternate Method, Not to be written in journal) 
  /*
  void delete_character(char *str, char ch)  
  { 
