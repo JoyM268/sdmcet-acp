@@ -33,6 +33,6 @@
 	<p>
     If you have any questions or concerns about this repository, please contact the owner at joymascarenhas268@gmail.com. Thank you for using the "Advanced C Programming" Github repository!
   </p>
-	<img src="https://t.bkit.co/w_648d522658925.gif" />
+	
 </body>
 </html>
