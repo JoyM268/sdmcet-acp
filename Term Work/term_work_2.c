@@ -30,25 +30,3 @@
    } 
    *dest = '\0'; 
  } 
- 
- //OR (alternate Method, Not to be written in journal) 
- /*
- void delete_character(char *str, char ch)  
- { 
-   char *temp; 
-   while(*str) 
-   { 
-     if(*str == ch) 
-     { 
-       temp = str; 
-       while(*temp) 
-       { 
-         *temp = *(temp + 1); 
-         temp++; 
-       } 
-       continue; 
-     } 
-     str++; 
-   } 
- } 
- */
