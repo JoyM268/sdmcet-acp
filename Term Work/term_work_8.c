@@ -1,6 +1,5 @@
-/* Write a modular c program to search an element from the 
-array of ‘n’ elements using Binary search algorithm. If 
-element is found return its index value otherwise return -1 */
+/* Write a modular c program to search an element from the array of ‘n’ elements using Binary search algorithm. 
+If element is found return its index value otherwise return -1 */
   
 #include<stdio.h> 
 #define SIZE 50 
