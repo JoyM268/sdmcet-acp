@@ -31,6 +31,7 @@
      int lowest; 
      lowest = *highest = *marks; 
      int *end = marks + n - 1; 
+     marks = marks + 1;
      while(marks <= end) 
      { 
          if(*marks > *highest) 
