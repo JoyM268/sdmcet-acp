@@ -1,6 +1,4 @@
-/* Write a modular C program to sort the given marks of ‘n’
-students in the course of C-programming. (use any sorting 
-techniques) */
+// Write a modular C program to sort the given marks of ‘n’ students in the course of C-programming. (use any sorting techniques)
   
 #include<stdio.h>
 #define SIZE 50
