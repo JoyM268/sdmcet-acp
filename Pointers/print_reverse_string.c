@@ -1,4 +1,4 @@
-//Program to print reversed string using pointers
+//Program to print string in reverse using pointers
 #include<stdio.h>
 #include<string.h>
 
