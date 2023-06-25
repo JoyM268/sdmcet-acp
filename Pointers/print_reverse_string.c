@@ -15,7 +15,6 @@ int main()
 void rev(char *p)
 {
     int i, j, n;
-    char str[100];
     n = strlen(p);
     while(n > 0)
     {
