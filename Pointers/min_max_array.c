@@ -22,24 +22,25 @@ void read(int *arr, int n)
     int i; 
     for(i = 0; i < n; i++)
     {
-        scanf("%d", &arr[i]);
+        scanf("%d", (arr + i));
     }
 }
 
 int get_min_max(int *arr, int n, int *max)
 {
     int i, min;
-    *max = min = arr[0];
+    *max = min = *arr;
     for(i = 1; i < n; i++)
     {
-        if(arr[i] < min)
+        if(*(arr + i) < min)
         {
-            min = arr[i];
+            min = *(arr + i);
         }
-        if(arr[i] > *max)
+        if(*(arr + i) > *max)
         {
-            *max = arr[i];
+            *max = *(arr + i);
         }
     }
     return min;
 }
+
