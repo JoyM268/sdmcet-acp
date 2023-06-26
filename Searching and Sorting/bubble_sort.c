@@ -1,4 +1,4 @@
-//Program to implement bubble sort on a sorted array
+//Program to implement bubble sort
 #include<stdio.h>
 #define SIZE 50
 
