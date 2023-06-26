@@ -15,7 +15,7 @@ main()
     scanf("%d %d", &m, &n);
     printf("Enter the order of matrix 2: ");
     scanf("%d %d", &p, &q);
-    if(m != p && n != q)
+    if(m != p || n != q)
     {
         printf("Matrix addition not possible\n");
         exit(0);
