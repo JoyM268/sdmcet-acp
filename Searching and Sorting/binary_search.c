@@ -1,4 +1,4 @@
-//Modular program to implement binary search
+//Modular program to implement binary search on a sorted array
 #include<stdio.h>
 #define SIZE 50
 
