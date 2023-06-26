@@ -3,7 +3,7 @@ If element is found return its index value otherwise return -1 */
   
 #include<stdio.h> 
 #define SIZE 50 
-  
+ void sort(int *, int);
  void read_array(int *, int); 
  int binary_search(int *, int, int); 
  main() 
@@ -28,6 +28,7 @@ If element is found return its index value otherwise return -1 */
   
  int binary_search(int *arr, int n, int key) 
  { 
+     sort(arr, n);
      int low = 0, high = n - 1, mid; 
      while(low <= high) 
      { 
@@ -56,3 +57,19 @@ If element is found return its index value otherwise return -1 */
          scanf("%d", &arr[i]); 
      } 
  }
+
+void sort(int *arr, int n)  
+ {  
+   int i, j, key;  
+   for(i = 1; i < n; i++)  
+   {  
+     key = arr[i];  
+     j = i - 1;  
+     while(j >= 0 && arr[j] > key)  
+     {  
+       arr[j + 1] = arr[j];  
+       j = j - 1;  
+     }  
+     arr[j + 1] = key;  
+   }  
+ } 
