@@ -15,7 +15,7 @@ void compute_highest(struct book *, int);
 
 main()
 {
-    struct book b;
+    struct book b[SIZE];
     int n;
     printf("Enter the number of books: ");
     scanf("%d", &n);
