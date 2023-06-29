@@ -19,9 +19,9 @@ main()
     int n;
     printf("Enter the number of books: ");
     scanf("%d", &n);
-    read_details(&b, n);
-    print_details(&b, n);
-    compute_highest(&b, n);
+    read_details(b, n);
+    print_details(b, n);
+    compute_highest(b, n);
 }
 
 void read_details(struct book *b, int n)
