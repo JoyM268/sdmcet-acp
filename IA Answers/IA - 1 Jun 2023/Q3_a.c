@@ -10,6 +10,7 @@ main()
     printf("Before swapping:\n");
     printf("num 1 = %d and num 2 = %d\n", num1, num2);
     swap(&num1, &num2);
+    printf("After swapping:\n");
     printf("num 1 = %d and num 2 = %d\n", num1, num2);
 }
 
