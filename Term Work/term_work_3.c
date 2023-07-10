@@ -10,6 +10,7 @@ struct book
 {
     char author[30];
     char title[30];
+    char publisher[30];
     float price;
     int stock;
 };
@@ -76,6 +77,8 @@ void read_details(struct book *b, int n)
         scanf("%s", b[i].title);
         printf("Enter the author: ");
         scanf("%s", b[i].author);
+        printf("Enter the publisher: ");
+        scanf("%s", b[i].publisher);
         printf("Enter the price: ");
         scanf("%f", &b[i].price);
         printf("Enter the stock: ");
@@ -92,6 +95,7 @@ void display_details(struct book *b, int n)
         printf("\nBook %d:\n", i + 1);
         printf("Title: %s\n", b[i].title);
         printf("Author: %s\n", b[i].author);
+        printf("Publisher: %s\n", b[i].publisher);
         printf("Price: %.2f\n", b[i].price);
         printf("Stock: %d\n", b[i].stock);
     }
@@ -102,6 +106,7 @@ void book_detail(struct book *b, int index)
     printf("\nBook details:\n");
     printf("Title: %s\n", b[index].title);
     printf("Author: %s\n", b[index].author);
+    printf("Publisher: %s\n", b[index].publisher);
     printf("Price: %.2f\n", b[index].price);
     printf("Stock: %d\n", b[index].stock);
 }
