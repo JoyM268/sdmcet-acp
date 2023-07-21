@@ -7,7 +7,6 @@ d) compute ( ) - determine and display the title of the book corresponding
 to highest price. */
 
 #include<stdio.h> 
-#include<stdlib.h>
 #define SIZE 100
 
 struct BOOK{
@@ -61,7 +60,7 @@ void display(struct BOOK *b, int n)
 void compute(struct BOOK *b, int n)
 {
     float highest = b[0].price;
-    int i, index;
+    int i, index = 0;
     for(i = 1; i < n; i++)
     {
         if(highest < b[i].price)
