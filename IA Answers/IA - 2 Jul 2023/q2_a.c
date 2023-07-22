@@ -2,7 +2,7 @@
 to read the information about 50 students into an array Students. Compute and print CIE (sum of best 2 IAs+CTA) marks of each student in the following format: 
 USN     Name    IA1     IA2     IA3     CTA     CIE */
 #include<stdio.h>
-#define SIZE 2
+#define SIZE 50
 
 struct student_info{
   char name[30], usn[11];
