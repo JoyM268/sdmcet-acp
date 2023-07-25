@@ -1,3 +1,4 @@
+//Program to take arguments from command line and save it in given file
 #include<stdio.h>
 #include<stdlib.h>
 main(int argc, char *argv[])
