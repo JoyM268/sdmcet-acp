@@ -47,7 +47,7 @@ void display(struct PLAYER p[], int n)
         printf("Name: %s\n", p[i].name);
         printf("Score1: %d\n", p[i].score1);
         printf("Score2: %d\n", p[i].score2);
-        printf("Score2: %d\n", p[i].score3);
+        printf("Score3: %d\n", p[i].score3);
     }
 }
 
