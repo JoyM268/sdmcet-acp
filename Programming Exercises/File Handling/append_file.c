@@ -22,4 +22,6 @@ main()
         putc(ch, fp1);
     }
     printf("file %s successfully appended into file %s\n", file2, file1);
+    fclose(fp1);
+    fclose(fp2);
 }
