@@ -14,7 +14,7 @@ main()
         scanf("%d", &num[i]);
         if(num[i] < 0 || num[i] > 4)
         {
-            printf("The number should br within the range of (0 - 4)\n");
+            printf("The number should be within the range of (0 - 4)\n");
             i--;
             continue;
         }
