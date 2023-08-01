@@ -15,7 +15,7 @@ main()
     FILE *fp;
     char itemName[100];
     int number, quantity, i;
-    float price;
+    float price, value;
     long n;
     fp = fopen("INVENTORY", "w");
     fprintf(fp, "Item name\tNumber\tPrice\tQuantity\n");
@@ -30,12 +30,13 @@ main()
     fp = fopen("INVENTORY", "r");
     fseek(fp, n, 0);
     printf("\nInventory table:\n");
-    printf("Item name\tNumber\tPrice\tQuantity\n");
+    printf("Item name\tNumber\tPrice\tQuantity\tValue\n");
     while(1)
     {
         fscanf(fp, "%s %d %f %d", itemName, &number, &price, &quantity);
         if(feof(fp)) break;
-        printf("%s\t\t%d\t%.2f\t%d\n", itemName, number, price, quantity);
+        value = price * quantity;
+        printf("%s\t\t%d\t%.2f\t%d\t\t%.2f\n", itemName, number, price, quantity, value);
     }
     fclose(fp);
     fp = fopen("INVENTORY", "a");
@@ -46,12 +47,13 @@ main()
     fp = fopen("INVENTORY", "r");
     fseek(fp, n, 0);
     printf("\nInventory table:\n");
-    printf("Item name\tNumber\tPrice\tQuantity\n");
+    printf("Item name\tNumber\tPrice\tQuantity\tValue\n");
     while(1)
     {
         fscanf(fp, "%s %d %f %d", itemName, &number, &price, &quantity);
         if(feof(fp)) break;
-        printf("%s\t\t%d\t%.2f\t%d\n", itemName, number, price, quantity);
-    }         
+        value = price * quantity;
+        printf("%s\t\t%d\t%.2f\t%d\t\t%.2f\n", itemName, number, price, quantity, value);
+    }
     fclose(fp);
 }
