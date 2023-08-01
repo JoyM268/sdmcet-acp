@@ -1,3 +1,4 @@
+// Write  a  C program  to  store  a  character  string  in  a  block  of memory  space  created  by  malloc  ()  and  then  modify  the same to store a largest string.
 #include <stdio.h>
 #include<stdlib.h>
 #include<string.h>
