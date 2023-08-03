@@ -14,7 +14,7 @@ main()
 {
     FILE *fp;
     char itemName[100];
-    int number, quantity, i;
+    int number, quantity, i, flag;
     float price, value;
     long n;
     fp = fopen("INVENTORY", "w");
@@ -40,9 +40,14 @@ main()
     }
     fclose(fp);
     fp = fopen("INVENTORY", "a");
-    printf("\nEnter the name, number, price and quantity of the item to be appended: ");
-    scanf("%s %d %f %d", itemName, &number, &price, &quantity);
-    fprintf(fp, "%s\t\t%d\t%.2f\t%d\n", itemName, number, price, quantity);
+    do{
+        printf("\nEnter the name, number, price and quantity of the item to be appended: ");
+        scanf("%s %d %f %d", itemName, &number, &price, &quantity);
+        fprintf(fp, "%s\t\t%d\t%.2f\t%d\n", itemName, number, price, quantity);
+        printf("Item %s appended\n", itemName);
+        printf("Do you want to append another item(1 for yes/ 0 for NO): ");
+        scanf("%d", &flag);
+    }while(flag == 1);
     fclose(fp);
     fp = fopen("INVENTORY", "r");
     fseek(fp, n, 0);
