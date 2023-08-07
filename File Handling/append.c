@@ -33,6 +33,7 @@ main()
     while(ftell(fp) < n) 
     { 
         fscanf(fp,"%s %d %f %d", item.name, &item.number, &item.price, &item.quantity); 
+        if(feof(fp)) break;
         fprintf(stdout,"%-8s %7d %8.2f %8d\n", item.name, item.number, item.price, item.quantity); 
     } 
     fclose(fp); 
@@ -48,5 +49,5 @@ void append(struct invent_record *product, FILE *ptr)
     scanf("%f", &product->price); 
     printf("Quantity:"); 
     scanf("%d", &product->quantity); 
-    fprintf(ptr, "%s %d %.2f %d", product->name, product->number, product->price, product->quantity); 
+    fprintf(ptr, "%s %d %.2f %d\n", product->name, product->number, product->price, product->quantity); 
 }
