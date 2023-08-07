@@ -18,8 +18,6 @@ main()
     float price, value;
     long n;
     fp = fopen("INVENTORY", "w");
-    fprintf(fp, "Item name\tNumber\tPrice\tQuantity\n");
-    n = ftell(fp);
     for(i = 1; i <= 3; i++)
     {
         printf("Enter the name, number, price and quantity of item %d: ", i);
@@ -28,7 +26,6 @@ main()
     }
     fclose(fp);
     fp = fopen("INVENTORY", "r");
-    fseek(fp, n, 0);
     printf("\nInventory table:\n");
     printf("Item name\tNumber\tPrice\tQuantity\tValue\n");
     while(1)
@@ -50,7 +47,6 @@ main()
     }while(flag == 1);
     fclose(fp);
     fp = fopen("INVENTORY", "r");
-    fseek(fp, n, 0);
     printf("\nInventory table:\n");
     printf("Item name\tNumber\tPrice\tQuantity\tValue\n");
     while(1)
