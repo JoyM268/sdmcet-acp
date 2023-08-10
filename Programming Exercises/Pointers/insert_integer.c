@@ -45,7 +45,6 @@ void print(int *arr, int n)
 int search(int *arr, int n, int ele)
 {
     int low = 0, high = n - 1, mid, index = n;
-    mid = (low + high)/2;
     while(low <= high)
     {
         mid = (low + high)/2;
