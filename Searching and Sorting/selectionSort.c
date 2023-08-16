@@ -58,7 +58,9 @@ void sort(int *arr, int n)
 			{
 				min = j;
 			}
-		}
-		swap(&arr[min], &arr[i]); 
+		}				
+		if(min != i)
+			swap(&arr[min], &arr[i]); 
+
 	}
 }
