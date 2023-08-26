@@ -40,7 +40,7 @@ int is_palindrome(char *str, int len)
 int is_palindrome(char *str, int len)
 {
     int i;
-    for(i = 0; i < len; i++)
+    for(i = 0; i < len/2; i++)
     {
         if(*(str + i) != *(str + (len - i - 1)))
         {
