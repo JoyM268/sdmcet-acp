@@ -9,7 +9,7 @@ main()
   printf("Enter input string: ");
   scanf("%s", str);
   cptr = str;
-  while(*cptr != NULL)
+  while(*cptr != '\0')
   {
     printf("%c at address %p\n", *cptr, cptr);
     cptr++;
