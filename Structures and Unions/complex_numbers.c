@@ -49,7 +49,7 @@ void difference()
 
 void product()
 {
-    c5.real = c1.real * c2.real;
-    c5.img = c1.img * c2.img;
+    c5.real = (c1.real*c2.real)-(c1.img*c2.img);
+    c5.img = (c1.real*c2.img)+(c2.real*c1.img);
     printf("The product of 2 complex numbers is = %d + i%d\n", c5.real, c5.img);
 }
